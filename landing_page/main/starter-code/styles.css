@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/bg-main-desktop.png);
+}
+
+header {
+    display: flex;
+}
+
+.top-container {
+    margin: 3rem 5rem 8rem 8rem;
+}
+
+.top-container img {
+    margin-bottom: 6rem;
+}
+
+.description {
+    width: 50vw;
+}
+
+.description h3 {
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 88px;
+    line-height: 88px;
+    word-wrap: break-all;
+}
+
+.description p {
+    margin-top: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 34px;
+    font-size: 20px;
+    word-wrap: break-all;
+}
+
+.top-image {
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.top-image img {
+    width: auto;
+    height: auto;
+    margin-top: -30px;
+}
+
+.mid-container {
+    background-color: #191826;
+    display: flex;
+    flex: 1;
+    width: 85vw;
+    justify-content: space-between;
+    position: relative;
+    height: 40rem;
+    margin: 200px auto;
+    border-radius: 15px;
+}
+
+
+.telephone {
+    max-width: 23rem;
+    margin-top: -12rem;
+    height: 40rem;
+    z-index: 1;
+}
+
+
+
+.telephone>img {
+    height: 100%;
+    min-width: 100%;
+
+}
+
+.background-image>img {
+    height: 30rem;
+    position: absolute;
+    margin-left: -5rem;
+    margin-top: -3rem;
+    z-index: 0;
+}
+
+.box {
+    width: 25vw;
+}
+
+
+
+.description-plan {
+    min-width: 27rem;
+    background-color: #FA7453;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-shrink: 1;
+    height: 38rem;
+    margin-top: 8rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+    padding: 3rem;
+    z-index: 2;
+}
+
+.product-name {
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product-description {
+    max-width: 16rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    word-break: break-word;
+    color: white;
+    line-height: 25px;
+}
+
+.price {
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    vertical-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.price::after {
+    content: "/month";
+    font-size: 1rem;
+    vertical-align: middle;
+
+}
+
+.buttons-wraper {
+    flex-wrap: nowrap;
+    word-break: keep-all;
+}
+
+.iOS-button {
+    width: 100%;
+    padding: 1.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    border-width: 0;
+    border-radius: 1rem;
+    background-color: #191826;
+    color: white;
+    vertical-align: middle;
+}
+
+.iOS-button:hover {
+    background-color: #66E2DC;
+    cursor: pointer;
+}
+
+.iOS-button>span,
+.iOS-button>img {
+    margin-right: 0.5rem;
+    vertical-align: middle
+}
+
+
+.android-button {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    border-width: 0;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.android-button:hover {
+    background-color: #FFB964;
+    cursor: pointer;
+}
+
+
+.android-button>span,
+.android-button>img {
+    margin-right: 0.2rem;
+    vertical-align: middle
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+.footer-wraper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-text {
+    width: 18.5rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: left;
+    line-height: 1.5rem;
+    overflow-wrap: break-word;
+    margin: 0 15rem;
+}
+
+
+.links svg {
+    margin-top: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.links>svg:hover {
+    color: #FA7453;
+}
+
+
+@media only screen and (max-width: 1378px) {
+
+    .top-container {
+        margin: 3rem 5rem 8rem 4rem;
+    }
+
+    .description h3 {
+        font-size: 75px;
+        line-height: 80px;
+    }
+
+    .description p {
+        margin-top: 30px;
+        line-height: 34px;
+        font-size: 18px;
+    }
+
+    .mid-container {
+        width: 90vw;
+    }
+
+    .telephone {
+        max-width: 25rem;
+
+    }
+
+    .description-plan {
+        min-width: 25rem;
+        background-color: #FA7453;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-left: -3rem;
+        border-radius: 15px;
+        padding: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1168px) {
+    .top-container {
+        margin: 3rem 5rem 5rem 2.5rem;
+    }
+
+    .top-image img {
+        width: 18rem;
+        height: auto;
+        margin-top: -30px;
+        margin-right: -10px;
+    }
+
+    .description h3 {
+        font-size: 70px;
+        line-height: 65px;
+
+    }
+
+    .mid-container {
+        width: 95vw;
+    }
+
+    .telephone {
+        height: 39rem;
+    }
+
+
+    .background-image>img {
+        height: 30rem;
+        position: absolute;
+        margin-left: -5rem;
+        margin-top: -3rem;
+        z-index: 0;
+    }
+
+    .description-plan {
+        min-width: 25rem;
+        background-color: #FA7453;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: nowrap;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-left: -5rem;
+    }
+
+
+    .iOS-button {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .android-button {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1rem;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+
+    .footer-text {
+        width: 18.5rem;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-align: left;
+        line-height: 1.5rem;
+        overflow-wrap: break-word;
+        margin: 0 5rem;
+    }
+
+
+    .links svg {
+        margin-top: 20px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+}
+
+
+@media only screen and (max-width: 868px) {
+    .top-container {
+        margin: 4rem 3rem;
+    }
+
+
+    .description h3 {
+
+        font-size: 67px;
+        line-height: 55px;
+
+    }
+
+    .description p {
+        margin-top: 30px;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .top-image img {
+        width: 15rem;
+        height: auto;
+        margin-top: -30px;
+        margin-right: -40px;
+    }
+
+    .mid-container {
+        background-color: #191826;
+        display: flex;
+        flex-shrink: 1;
+        width: 95vw;
+        height: 35rem;
+        border-radius: 15px;
+
+    }
+
+    .telephone {
+        max-width: 23rem;
+        margin-top: -12rem;
+        height: 37.5rem;
+        z-index: 1;
+    }
+
+    .background-image>img {
+        height: 28rem;
+        position: absolute;
+        margin-left: -5rem;
+        margin-top: -3rem;
+        z-index: 0;
+    }
+
+    .description-plan {
+        min-width: 23rem;
+        margin-left: -5.5rem;
+        height: 33rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .product-name {
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+
+    .product-description {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .iOS-button {
+        padding: 1rem 2rem;
+        margin-top: -1rem;
+    }
+
+    .android-button {
+        margin-top: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 0.8rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+
+    .footer-wraper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        width: 19rem;
+        text-align: left;
+        line-height: 1.5rem;
+        overflow-wrap: break-word;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 678px) {
+
+
+    .top-image img {
+        width: 12rem;
+        height: auto;
+        margin-top: -30px;
+        margin-right: -40px;
+    }
+
+    .description h3 {
+
+        font-size: 60px;
+        line-height: 40px;
+
+    }
+
+    .description p {
+        width: 100%;
+    }
+
+    .telephone {
+        max-width: 23rem;
+        margin-top: -12rem;
+
+        height: 34rem;
+        z-index: 1;
+    }
+
+    .background-image>img {
+        height: 25rem;
+        position: absolute;
+        margin-left: -8rem;
+        margin-top: -3rem;
+        z-index: 0;
+    }
+
+    .description-plan {
+        margin-left: -10rem;
+        min-width: 18rem;
+        margin-right: 0;
+    }
+
+    .description h3 {
+
+        font-size: 48px;
+        line-height: 50px;
+
+    }
+
+    .description p {
+        margin-top: 30px;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        margin: 2rem 0rem;
+    }
+
+
+    .links {
+        margin-left: -19rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 424px) {
+
+
+
+    .top-container {
+        margin: 3rem 0rem 0rem 1.5rem;
+    }
+
+    .top-image img {
+        display: none;
+    }
+
+    .description h3 {
+        margin-top: -3rem;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .description p {
+        margin-top: 20px;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        width: 80vw;
+    }
+
+    .mid-container {
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        height: 37rem;
+        border-radius: 15px;
+    }
+
+    .telephone {
+        max-width: 23rem;
+        margin-bottom: -20rem;
+        height: 30rem;
+        z-index: 1;
+    }
+
+    .background-image {
+        margin-bottom: -8rem;
+        margin-left: 8rem;
+    }
+
+    .background-image>img {
+        height: 25rem;
+        position: static;
+        z-index: 0;
+    }
+
+    .box {
+        width: 0;
+    }
+
+    .description-plan {
+        margin-left: 0;
+        margin-top: 10rem;
+        margin-bottom: -28rem;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        margin: 2rem 2rem;
+    }
+
+    .footer-wraper {
+        display: flex;
+        flex-direction: column;
+        margin: 12rem 0 0 0;
+    }
+
+    .footer-text {
+        width: 80%;
+        font-size: .9rem;
+        text-align: left;
+        line-height: 1.5rem;
+        overflow-wrap: break-word;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+
+    .links {
+        display: flex;
+        align-self: start;
+        justify-content: left;
+        margin-left: -.5rem;
+    }
+
+    .links svg {
+        margin-top: 25px;
+        align-items: start;
+    }
+}
